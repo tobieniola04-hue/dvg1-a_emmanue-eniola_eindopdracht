@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Breath and Recharge</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body>
+    <div id="startScreen" class="start-screen">
+      <h2>Welcome 🌿</h2>
+      <button id="enterAppBtn">Start</button>
+    </div>
+    <header class="header">
+      <div class="header-inner">
+        <h1 class="site-title">
+          Breath and Recharge
+          <span class="leaf-icon">🌿</span>
+        </h1>
+      </div>
+    </header>
+    <main class="container" id="app" style="display: none">
+      <h2 class="subtitle">Just Relaxe</h2>
+      <p id="breathText" class="breath-text"></p>
+      <div class="circle-wrapper">
+        <div class="circle" id="circle">
+          <div class="middle-dot"></div>
+          <div class="circle-handle" id="circleHandle"></div>
+        </div>
+      </div>
+      <div class="stress-buttons">
+        <button class="stress-btn active" data-level="low">Low stress</button>
+        <button class="stress-btn" data-level="medium">Medium stress</button>
+        <button class="stress-btn" data-level="high">High stress</button>
+      </div>
+      <div class="slider-container">
+        <input type="range" min="0" max="60" value="30" id="slider" step="1" />
+        <span class="time" id="time">00:30</span>
+      </div>
+      <p class="message" id="message"></p>
+      <div class="btn-row">
+        <button class="start-btn" id="startBtn">Start</button>
+        <button class="stop-btn" id="stopBtn">Stop</button>
+      </div>
+    </main>
+    <footer class="footer">
+      <p class="footer-copy">
+        Copyright © 2026 Arteveldehogeschool — All rights reserved.
+      </p>
+      <a href="contact.html" class="contact-link">Contact</a>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
